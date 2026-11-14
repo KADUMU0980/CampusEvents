@@ -1,0 +1,80 @@
+﻿Git command reference
+Name: Kadumuri Sri Sai Teja Reddy
+BITS ID: 2024EB02036
+Project: CampusEvents
+
+git --version
+Checks the installed Git version.
+
+git init
+Initialises the local Git repository.
+
+git config user.name "Kadumuri Sri Sai Teja Reddy"
+Sets the commit author name for this repository.
+
+git config user.email "srisaiteja384@gmail.com"
+Sets the commit author email for this repository.
+
+git branch -M main
+Renames the current branch to main.
+
+git add index.html about.html
+Stages both HTML files for the first commit.
+
+git add index.html
+Stages the home-page modification.
+
+git add about.html
+Stages the feature modification to the about page.
+
+git commit -m "message"
+Creates a commit containing the staged changes and a description.
+
+git branch feature
+Creates a branch named feature.
+
+git switch feature
+Switches to the feature branch.
+
+git switch main
+Switches back to main.
+
+git merge --no-ff feature -m "Merge the event category feature"
+Merges feature into main and creates an explicit merge commit.
+
+git --no-pager log --oneline --graph --decorate --all
+Displays the commit graph, branch labels and history without a pager.
+
+git check-ignore -v application.log cache/events.txt
+Shows the ignore rules matching the sample files.
+
+git status --short
+Displays concise working-tree and staging information.
+
+git add .gitignore
+Stages the ignore configuration.
+
+git add temporary-event.txt
+Stages the temporary demonstration file.
+
+git revert --no-edit HEAD
+Creates a new commit reversing the latest commit.
+
+git status
+Displays the working-tree status and branch tracking information.
+
+git add git_commands.txt
+Stages this command documentation file.
+
+git remote add origin https://github.com/KADUMU0980/CampusEvents.git
+Registers the GitHub repository as the origin remote.
+
+git remote -v
+Displays the configured remote fetch and push URLs.
+
+git push -u origin main
+Pushes main to GitHub and configures upstream tracking.
+
+git push -u origin feature
+Pushes feature to GitHub and configures upstream tracking.
+
